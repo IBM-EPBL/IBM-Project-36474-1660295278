@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Oxygen|Jost|Josefin+Sans|Questrial">
+    <style>
+.top1{
+    height: 0.6cm;
+    background-color: rgb(0, 0, 0);
+    margin-top: -0.7cm;
+    margin-left: -0.2cm;
+    width: 101.15%;
+}
+.top2{
+    height: 1.5cm;
+    margin-top: cm;
+    background-color: rgb(39, 38, 38);
+    margin-left: -0.2cm;
+    width: 101.15%;
+}
+.menu{
+    padding: 7px;
+    float:right;
+    font-family: Jost;
+    margin-top: -1.35cm;
+    margin-right: .009cm;
+}
+input[type=submit] {
+    font-family: Questrial;
+    font-size: 18px;
+    display: block;
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+p{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.upload{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+input[type=file]{
+    display: block;
+    width: 20%;
+    font-family: Questrial;
+    background-color: #5b6b5c;
+    color: white;
+    padding: 14px 7px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.footer1{
+    margin-top: 0.3cm;
+    height: 0.6cm;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: -0.3cm;
+    margin-left: -0.2cm;
+    width: 101.15%;
+}
+.footer2{
+    margin-top: 6.3cm;
+    height: 1.7cm;
+    width: 101.15%;
+    margin-left: -0.2cm; 
+    margin-bottom: -0.3cm;
+    background-color: rgb(39, 38, 38);
+}
+body{
+    font-family: Questrial;
+}
+h2{
+    color: rgb(250, 250, 250);
+    font-size: 29.5px;
+    font-weight: lighter;
+    font-family: Josefin Sans;
+}
+a:link, a:visited
+{color: gray;}
+    </style>
+    
+        
+</head>
+<body>
+    <div class="top1"><h2 style="color: white;text-align: left;margin-left: 0.5cm;padding-top: 1.03cm;">Intelligent Vehicle Damage Assessment & Cost Estimator for Insurance Companies</h2></div>
+    <div class="top2"></div>
+    <div class="menu">
+        <a href="index.html" style="color: rgb(255, 255, 255);text-decoration: none;font-size: 20px;">Home</a>
+
+        <a href="logout.html" style="color:  rgb(255, 255, 255);text-decoration: none;padding-left: .25cm;font-size: 20px;">Logout</a>
+    </div>
+    <br><br>
+    <form action="{{ url_for('result') }}" method="POST" enctype="multipart/form-data" style="margin-top: 2.5cm;">
+        <input type="file" name="file" required><br><br>
+        <input type="submit" onclick="myFunction()">
+      </form>
+      <script>
+        function myFunction() {
+          alert("Press OK and Please wait upto 15 seconds till our system analyzes the damage")
+        }
+        </script>
+  
+    </body>
+    <div class="footer2"><p style="padding-top: 0.55cm;color: rgb(255, 255, 255);text-align: center;">Copyright &#169; 2022. All Rights Reserved.</p><p style="color: rgb(255, 255, 255);margin-left: 24.5cm;margin-top: -1.3cm;">For any feedbacks:<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%6D%6F%68%61%6D%65%64%75%73%6D%61%6E%6A%62%61%2E%75%67%31%39%2E%63%73%40%66%72%61%6E%63%69%73%78%61%76%69%65%72%2E%61%63%2E%69%6E" target="_blank"><i class="fa fa-envelope" style="font-size:24px;margin-left: .5cm;padding-top: .1cm;"></i></a><a href="https://www.linkedin.com/in/mohamed-usman-j-b-a-7131ab228/"target="_blank"><i class="fa fa-linkedin" style="font-size:24px;margin-left: .5cm;padding-top: .2cm;"></i></a></p></div>
+<div class="footer1"></div>
+    </html>
